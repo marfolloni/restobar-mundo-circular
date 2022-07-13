@@ -1,0 +1,69 @@
+<!DOCTYPE html><!-- Esta etiqueta identifica el documento como HTML -->
+<html lang="es"><!-- idioma -->
+<head>
+    <meta charset="UTF-8"><!-- personalizar los caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- para que funcione bien en edge/explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- tamano de la pantalla -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Restobar Mundo circular</title>
+</head>
+<body>
+    <header><!-- ENCABEZADO: incluye la barra de navegacion y el logo -->
+        <div class="ancho">
+            <div class="logo">
+                <img class="header__logo" src="resources/favicon.ico" alt="Logo empresa">        
+            </div>
+            <nav class="header__nav"> <!-- Barra de navegacion o menu -->
+                <ul class="header__lista">
+                    <li class="header__item"><a href="#">Inicio</a></li>
+                    <li class="header__item"><a href="pages/contacto.html">Contacto</a></li>
+                    <li class="header__item"><a href="pages/productos.html">Productos</a></li>
+                    <li class="header__item"><a href="pages/servicios.html">Servicios</a></li>
+                    <li class="header__item"><a href="pages/sobre_nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <main><!-- Todo el contenido de la pagina que no sea header o footer -->
+        <section class="main__principal">
+            <h1 class="main__titulo">RESTOBAR MUNDO CIRCULAR</h1>
+            <div class="main__boton"><button>CONSULTAR DISPONIBILIDAD</button></div>
+        </section>
+        <section class="productos__grid"> <!-- Galeria de fotos -->
+            <img class="productos__img prod1" src="resources/comiendo.jpg" alt="amigos comiendo">
+            <img class="productos__img prod2" src="resources/Restobar sala informal.jpg" alt="salon restaurante">
+            <img class="productos__img prod3" src="resources/comiendo galeria 3.jpg" alt="grupo de amigos cenando">
+            <img class="productos__img prod4" src="resources/comiendo galeria 4.jpg" alt="hamburguesas premiun">
+            <img class="productos__img prod5" src="resources/comiendo galeria 2.jpg" alt="mujer comiendo hamburguesa">
+            <img class="productos__img prod6" src="resources/cocinero.jpg" alt="chef cocinando">
+            <img class="productos__img prod7" src="resources/platos.jpg" alt="chef2">
+        </section>
+    </main>
+    <footer><!-- pie de pagina -->
+        <div class="footer__indice">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/sobre_nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </div>    
+        <div class="footer__mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.4256584210125!2d-64.20365988515856!3d-31.402396502716858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988ed15dc0f9%3A0x56e62e31d2f156a7!2s12%20de%20Octubre%201643%2C%20X5000%20FSY%2C%20C%C3%B3rdoba!5e0!3m2!1spt-BR!2sar!4v1657508166623!5m2!1spt-BR!2sar" width="100%" height="100%" style="border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer__redes">
+            <a href="https://facebook.com"><img class="footer__iconos" src="resources/facebook-brands.svg"></a>
+            <a href="https://instagram.com"><img class="footer__iconos" src="resources/instagram-brands.svg"></a>
+            <a href="https://tiktok.com"><img class="footer__iconos" src="resources/tiktok-brands.svg"></a>
+        </div>
+        <span class="footer__derechos"> (c) Todos los derechos reservados 2022</span>
+    </footer>
+</body>
+</html>
