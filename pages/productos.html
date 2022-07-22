@@ -8,26 +8,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Productos - Restobar Mundo circular</title>
 </head>
 <body>
-    <header>
-        <div class="ancho">
-            <div class="logo">
-                <img class="header__logo" src="../resources/favicon.ico" alt="Logo empresa">        
+    <header><!-- ENCABEZADO: incluye la barra de navegacion y el logo -->
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/favicon.ico" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="header__nav">
-                <ul class="header__lista">
-                    <li class="header__item"><a href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a href="contacto.html">Contacto</a></li>
-                    <li class="header__item"><a href="productos.html">Productos</a></li>
-                    <li class="header__item"><a href="servicios.html">Servicios</a></li>
-                    <li class="header__item"><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
     <main>
         <section class="container">
@@ -93,7 +110,7 @@
             </ul>
         </div>    
         <div class="footer__mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.4256584210125!2d-64.20365988515856!3d-31.402396502716858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988ed15dc0f9%3A0x56e62e31d2f156a7!2s12%20de%20Octubre%201643%2C%20X5000%20FSY%2C%20C%C3%B3rdoba!5e0!3m2!1spt-BR!2sar!4v1657508166623!5m2!1spt-BR!2sar" width="100%" height="100%" style="border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1072.3244778909495!2d-64.18049225984986!3d-31.430159846586875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a294c69c9dad%3A0xe19dceff661cd41!2sESCALENO%20Resto%20Bar!5e0!3m2!1spt-BR!2sar!4v1658368442033!5m2!1spt-BR!2sar" width="100%" height="100%" style="border-radius: 5px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="footer__redes">
             <a href="https://facebook.com"><img class="footer__iconos" src="../resources/facebook-brands.svg"></a>
@@ -102,5 +119,7 @@
         </div>
         <span class="footer__derechos"> (c) Todos los derechos reservados 2022</span>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

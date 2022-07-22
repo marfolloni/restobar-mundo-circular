@@ -9,70 +9,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto - Restobar Mundo circular</title>
 </head>
 <body>
-    <header>
-        <div class="ancho">
-            <div class="logo">
-                <img class="header__logo" src="../resources/favicon.ico" alt="Logo empresa">        
+    <header><!-- ENCABEZADO: incluye la barra de navegacion y el logo -->
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/favicon.ico" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="header__nav">
-                <ul class="header__lista">
-                    <li class="header__item"><a href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a href="contacto.html">Contacto</a></li>
-                    <li class="header__item"><a href="productos.html">Productos</a></li>
-                    <li class="header__item"><a href="servicios.html">Servicios</a></li>
-                    <li class="header__item"><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>    
+        </nav>
     </header>
     <main>
-        <h1>Entra en Contacto con Nosotros</h1>
-        <h2>Informacion para Reserva</h2>    
-        <form method="post">
-            <div>
-                <label >Nombre y Apellido</label><!-- Muestra la palabra antes del input -->
-                <input type="text"><!-- Obtener informacion del usuario en una sola linea -->
-            </div>
-            <div>
-                <label >Email de confirmacion</label><!-- Muestra la palabra antes del input -->
-                <input type="email">
-            </div>
-            <div>
-                <label >Deja tu comentario</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea><!-- Informacion que necesite mas de una linea, NUNCA informacion confidencial  -->
-            </div>
-            <div>
-                <label >Selecciona el dia</label>
-                <input type="checkbox" name="Lunes" value="Lunes">
-                <label >"Lunes"</label>
-                <input type="checkbox" name="Martes" value="Martes">
-                <label >Martes"</label>
-                <input type="checkbox" name="Miercoles" value="Miercoles">
-                <label >"Miercoles"</label>
-                <input type="checkbox" name="Jueves" value="Jueves">
-                <label >"Jueves"</label>    
-                <input type="checkbox" name="Viernes" value="Viernes">
-                <label >"Viernes"</label>    
-            </div>
-            <div>
-                <label >Horario</label>
-                <select name="horario">
-                    <option value="12:00hs">12:00hs</option>
-                    <option value="13:00hs">13:00hs</option>
-                    <option value="20:00hs">20:00hs</option>
-                    <option value="22:00hs">22:00hs</option>
-                </select>    
-            </div>        
-            <input type="submit" value="Enviar formulario">
-            <input type="reset" value="Borrar formulario">
-        </form>
-        <p> Lorem ipsum dolor, sit amdebitis in tenetur atque sed autem nesciunt sequi commodi ut? Sit beatae veniam in vero adipisci sunt reprehenderit? Quam, reiciendis.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elihenderit similique magni sint ipsum distinctio commodi quibusdam minima odit aliquid atque, natus sit dolores deleniti explicabo, vero ut?</p>
+        <section class="container-fluid">
+            <article class="row mx-5 mt-3">
+                <div class="col-xs-12 col-md-12 col-lg-6">
+                    <h1>Contáctanos</h1>
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Escribe tus comentarios</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block my-3">
+                            <button class="btn btn-success" type="submit" >Enviar Formulario</button>
+                            <button class="btn btn-danger" type="submit" >Borrar Formulario</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-6">
+                    <img class="img-fluid ocultar" src="../resources/pregunta.jpg" alt="">
+                </div>
+            </article>
+        </section>
     </main>
     <footer><!-- pie de pagina -->
         <div class="footer__indice">
@@ -85,7 +92,7 @@
             </ul>
         </div>    
         <div class="footer__mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.4256584210125!2d-64.20365988515856!3d-31.402396502716858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988ed15dc0f9%3A0x56e62e31d2f156a7!2s12%20de%20Octubre%201643%2C%20X5000%20FSY%2C%20C%C3%B3rdoba!5e0!3m2!1spt-BR!2sar!4v1657508166623!5m2!1spt-BR!2sar" width="100%" height="100%" style="border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1072.3244778909495!2d-64.18049225984986!3d-31.430159846586875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a294c69c9dad%3A0xe19dceff661cd41!2sESCALENO%20Resto%20Bar!5e0!3m2!1spt-BR!2sar!4v1658368442033!5m2!1spt-BR!2sar" width="100%" height="100%" style="border-radius: 5px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="footer__redes">
             <a href="https://facebook.com"><img class="footer__iconos" src="../resources/facebook-brands.svg"></a>
@@ -94,5 +101,7 @@
         </div>
         <span class="footer__derechos"> (c) Todos los derechos reservados 2022</span>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
