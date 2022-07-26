@@ -138,8 +138,8 @@ ul {
 .main__titulo {
   grid-column: 2/3;
   grid-row: 1/2;
-  color: #f3e0c5;
-  text-shadow: 2px 2px 5  px black;
+  color: #c4f597;
+  text-shadow: 2px 2px 2px 2px black;
   font-size: 50px;
   display: flex;
   justify-content: center;
