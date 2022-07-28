@@ -1,1 +1,50 @@
-/* Mediaqueries */
+@media (min-width: 576px) and (max-width: 992px) {
+    .productos__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"prod7 prod2"
+                            "prod3 prod4"
+                            "prod5 prod6"
+                            "prod5 prod1";
+    }
+    footer  {
+        grid-template-areas:"indice"
+                            "mapa"
+                            "redes"
+                            "derechos";
+        padding: 10px;                    
+    }
+}
+@media  (min-width: 320px) and (max-width: 575px) {
+    .ancho {
+        display: flex;
+    }
+    header {
+        display: flex;
+        height: auto;
+        background-color:rgba(100, 253, 11, 0.726);
+    }
+    .header__lista {
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .ocultar{
+        display: none;
+    }
+    .productos__grid {
+        display: flex;
+        flex-direction: column;
+    }
+    footer  {
+        display: flex;
+        flex-direction: column;
+        
+        &__mapa {
+            display: flex;
+        }
+    }
+    .carousel-inner {
+        height: auto;
+    }
+    
+}

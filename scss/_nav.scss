@@ -1,0 +1,20 @@
+.nav-item:hover {
+    background-color: rgb(184, 250, 4);
+    transform: scale(1.15, 1.15);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.navbar-nav me-auto mb-2 mb-lg-0{
+    color: $color-letras-principal;
+}
+.nav-link {
+    color: $color-letras-principal;
+
+    &::selection{
+        background-color: $color-selector;
+        color: $color-selector-letras;
+    }    
+}
+.active {
+    color: $color-letras-principal;
+}
