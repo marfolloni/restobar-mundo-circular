@@ -22,14 +22,12 @@ footer {
         }
         &__redes {
             grid-area: redes;
-            display: flex;
-            justify-content: center;
+            @extend .justify-centrado;
             align-items: flex-end;
         }
         &__derechos {
             grid-area: derechos;
-            display: flex;
-            justify-content: center;
+            @extend .justify-centrado;
             align-items: flex-start;
         }
         &__indice ul li {

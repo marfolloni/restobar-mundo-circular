@@ -1,6 +1,7 @@
 @import "variables";
 @import "footer";
 @import "nav";
+@import "operators";
 
 *{
     margin: 0px; /* Margen externo*/
@@ -97,13 +98,11 @@ ul{
     color: rgb(196, 245, 151);
     text-shadow: 10px 10px 50px greenyellow;
     font-size: 50px;
-    display: flex;
-    justify-content: center;
     align-items: flex-end;
+    @extend .justify-centrado;
 }
 .container {
-    display: flex;
-    justify-content: center;
+    @extend .justify-centrado;
     flex-wrap: wrap;
 }
 .card {

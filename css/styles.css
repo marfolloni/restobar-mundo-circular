@@ -18,13 +18,9 @@ footer {
     grid-area: mapa; }
   footer .footer__redes {
     grid-area: redes;
-    display: flex;
-    justify-content: center;
     align-items: flex-end; }
   footer .footer__derechos {
     grid-area: derechos;
-    display: flex;
-    justify-content: center;
     align-items: flex-start; }
   footer .footer__indice ul li {
     font-size: 16px;
@@ -51,6 +47,11 @@ footer {
 
 .active {
   color: #080883; }
+
+/* Extend*/
+.justify-centrado, footer .footer__redes, footer .footer__derechos, .main__titulo, .container {
+  justify-content: center;
+  display: flex; }
 
 * {
   margin: 0px;
@@ -138,13 +139,9 @@ ul {
   color: #c4f597;
   text-shadow: 10px 10px 50px greenyellow;
   font-size: 50px;
-  display: flex;
-  justify-content: center;
   align-items: flex-end; }
 
 .container {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap; }
 
 .card {
