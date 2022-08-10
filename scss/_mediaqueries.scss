@@ -7,6 +7,13 @@
                             "prod5 prod6"
                             "prod5 prod1";
     }
+    .carousel-inner{
+        height: auto;
+    }
+    .ocultar{
+        display: none;
+    }
+
     footer  {
         grid-template-areas:"indice"
                             "mapa"

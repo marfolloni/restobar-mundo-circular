@@ -107,7 +107,7 @@ ul{
 }
 .card {
     width: 350px;
-    margin: 20px;    
+    margin: 40px;    
     height: auto;
     display: flex;
     border: 5px solid $color-letras-principal;
@@ -120,6 +120,7 @@ ul{
         text-align: center;
         line-height: 1.5;
         margin-bottom: 20px;
+        padding: 5px;
         background-color: $color-principal;
 
         &:hover {

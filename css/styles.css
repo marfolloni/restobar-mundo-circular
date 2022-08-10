@@ -146,7 +146,7 @@ ul {
 
 .card {
   width: 350px;
-  margin: 20px;
+  margin: 40px;
   height: auto;
   display: flex;
   border: 5px solid #080883;
@@ -158,6 +158,7 @@ ul {
     text-align: center;
     line-height: 1.5;
     margin-bottom: 20px;
+    padding: 5px;
     background-color: rgba(100, 253, 11, 0.445); }
     .card__info:hover {
       transform: scale(1.1, 1.1);
@@ -217,6 +218,10 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "prod7 prod2" "prod3 prod4" "prod5 prod6" "prod5 prod1"; }
+  .carousel-inner {
+    height: auto; }
+  .ocultar {
+    display: none; }
   footer {
     grid-template-areas: "indice" "mapa" "redes" "derechos";
     padding: 10px; } }
