@@ -213,6 +213,9 @@ a {
   width: 100%;
   padding: 16px; }
 
+.espacio {
+  height: 100vh; }
+
 @media (min-width: 576px) and (max-width: 992px) {
   .productos__grid {
     grid-template-columns: 1fr 1fr;
@@ -220,8 +223,6 @@ a {
     grid-template-areas: "prod7 prod2" "prod3 prod4" "prod5 prod6" "prod5 prod1"; }
   .carousel-inner {
     height: auto; }
-  .ocultar {
-    display: none; }
   footer {
     grid-template-areas: "indice" "mapa" "redes" "derechos";
     padding: 10px; } }
@@ -246,5 +247,7 @@ a {
     flex-direction: column; }
     footer__mapa {
       display: flex; }
+  .espacio {
+    display: flex; }
   .carousel-inner {
     height: auto; } }
